@@ -52,6 +52,7 @@ public class InventorySlot : MonoBehaviour
         Icon.SetActive(false);
         RemoveButton.interactable = false;
         SlotButton.interactable = false;
+        Count.SetActive(false);
     }
 
     public void OnRemoveButton()
