@@ -8,7 +8,7 @@ public class InventoryManager : MonoBehaviour
     public delegate void OnItemChanged();
     public OnItemChanged OnItemChangedCallback;
 
-    public List<InventoryItem> InventoryItems = new List<InventoryItem>();
+    public Inventory Inventory;
     int maxItems = 4;
 
     void Awake()
@@ -28,28 +28,28 @@ public class InventoryManager : MonoBehaviour
     {
         if (item.Type == ItemType.TOOL)
         {
-            if (InventoryItems.Count == maxItems)
+            if (Inventory.InventoryItems.Count == maxItems)
             {
                 Debug.Log("Inventory is Full");
                 return false;
             }
-            InventoryItems.Add(new InventoryItem(item, 1));
+            Inventory.InventoryItems.Add(new InventoryItem(item, 1));
         }
         else
         {
             int index = SearchForItem(item);
             if (index > -1)
             {
-                InventoryItems[index].AddItem(1);
+                Inventory.InventoryItems[index].AddItem(1);
             }
             else
             {
-                if (InventoryItems.Count == maxItems)
+                if (Inventory.InventoryItems.Count == maxItems)
                 {
                     Debug.Log("Inventory is Full");
                     return false;
                 }
-                InventoryItems.Add(new InventoryItem(item, 1));
+                Inventory.InventoryItems.Add(new InventoryItem(item, 1));
             }
         }
 
@@ -62,7 +62,7 @@ public class InventoryManager : MonoBehaviour
 
     public void Remove(InventoryItem inventoryItem)
     {
-        InventoryItems.Remove(inventoryItem);
+        Inventory.InventoryItems.Remove(inventoryItem);
         if (OnItemChangedCallback != null)
         {
             OnItemChangedCallback.Invoke();
@@ -76,11 +76,11 @@ public class InventoryManager : MonoBehaviour
         {
             if (inventoryItem.Count > 1)
             {
-                InventoryItems[index].Count--;
+                Inventory.InventoryItems[index].Count--;
             }
             else
             {
-                InventoryItems.RemoveAt(index);
+                Inventory.InventoryItems.RemoveAt(index);
             }
         }
         if (OnItemChangedCallback != null)
@@ -91,9 +91,9 @@ public class InventoryManager : MonoBehaviour
 
     public int SearchForItem(ItemSO item)
     {
-        for (int i = 0; i < InventoryItems.Count; i++)
+        for (int i = 0; i < Inventory.InventoryItems.Count; i++)
         {
-            if (InventoryItems[i] != null && InventoryItems[i].Item.name == item.name)
+            if (Inventory.InventoryItems[i] != null && Inventory.InventoryItems[i].Item.name == item.name)
             {
                 return i;
             }

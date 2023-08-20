@@ -1,6 +1,4 @@
-﻿using System;
-
-public class InventoryItem
+﻿public class InventoryItem
 {
     public int Count;
     public ItemSO Item;
