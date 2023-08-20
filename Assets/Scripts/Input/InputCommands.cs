@@ -20,4 +20,11 @@ public static class InputCommands
                 InventoryManager.Instance.toggleInventoryUI();
             };
     }
+    public static Action nextDialogue()
+    {
+        return delegate ()
+        {
+            DialogueManager.Instance.NextDialogue();
+        };
+    }
 }
