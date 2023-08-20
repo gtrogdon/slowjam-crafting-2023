@@ -4,6 +4,7 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance { get; private set; }
+    public InventoryUI UI;
 
     public delegate void OnItemChanged();
     public OnItemChanged OnItemChangedCallback;
@@ -22,6 +23,10 @@ public class InventoryManager : MonoBehaviour
         {
             Instance = this;
         }
+     }
+
+     void Start() {
+        UI = GetComponent<InventoryUI>();
      }
 
     public bool Add(ItemSO item)
@@ -99,5 +104,9 @@ public class InventoryManager : MonoBehaviour
             }
         }
         return -1;
+    }
+
+    public void toggleInventoryUI() {
+        UI.toggleInventoryUI();
     }
 }
