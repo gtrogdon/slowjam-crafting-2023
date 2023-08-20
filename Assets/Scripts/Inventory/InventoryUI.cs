@@ -15,6 +15,10 @@ public class InventoryUI : MonoBehaviour
         inventoryManager.OnItemChangedCallback += UpdateUI;
 
         slots = InventorySlots.GetComponentsInChildren<InventorySlot>();
+
+        // Initial update for if this is being loaded after a scene transition,
+        // otherwise inventory appears empty.
+        UpdateUI();
     }
 
     // Update is called once per frame
