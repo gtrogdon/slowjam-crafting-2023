@@ -6,6 +6,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
+        Debug.Log("trigger button pressed");
         DialogueManager.Instance.EnterDialogueMode(inkJSON);
     }
 }

@@ -67,16 +67,28 @@ public class DialogueManager : MonoBehaviour
 
     void Update()
     {
+        //if (!dialogueIsPlaying)
+        //{
+        //    return;
+        //}
+        //else
+        //{
+        //    if (InputManager.Instance.GetSubmitPressed())
+        //    {
+        //        ContinueStory();
+        //    }
+        //}
+    }
+
+    public void NextDialogue()
+    {
         if (!dialogueIsPlaying)
         {
             return;
         }
         else
         {
-            if (InputManager.Instance.GetSubmitPressed())
-            {
-                ContinueStory();
-            }
+            ContinueStory();
         }
     }
 
