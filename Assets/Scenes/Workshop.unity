@@ -3305,6 +3305,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: InventoryManager
       objectReference: {fileID: 0}
+    - target: {fileID: 3015466998228187686, guid: abf5792d9f730314c97207fb94b45037, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3629887982937857786, guid: abf5792d9f730314c97207fb94b45037, type: 3}
       propertyPath: InventoryPanel
       value: 
