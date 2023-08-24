@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: OldPipe
   m_EditorClassIdentifier: 
   Name: old pipe
-  Description: 
+  Description: It's old. It's a pipe.
   Type: 1
-  Icon: {fileID: 21300000, guid: 49790a0a808cf44db9d784c83b5ac0c3, type: 3}
+  Icon: {fileID: 21300000, guid: 9a9c9802ddda14ecf9ecf10fffe24e48, type: 3}
