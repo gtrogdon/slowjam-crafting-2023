@@ -18,5 +18,6 @@ public class ItemSO : ScriptableObject
 public enum ItemType
 {
     TOOL,
-    COMPONENT
+    COMPONENT,
+    ANDROID_PART
 }

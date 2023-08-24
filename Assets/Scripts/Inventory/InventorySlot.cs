@@ -55,7 +55,7 @@ public class InventorySlot : MonoBehaviour
         Count.SetActive(false);
     }
 
-    public void OnRemoveButton()
+    public void OnInventoryRemoveButton()
     {
         Debug.Log("clearing slot");
         InventoryManager.Instance.Remove(inventoryItem);
@@ -72,10 +72,22 @@ public class InventorySlot : MonoBehaviour
         return image != null;
     }
 
-    public void OnSlotButton()
+    public void OnBackPackSlotButton()
     {
         Debug.Log("Button Pressed");
         inventoryItem.Item.Use();
         InventoryManager.Instance.Decrement(inventoryItem);
+    }
+
+    public void OnStorageCraftSlotButton()
+    {
+        CraftingManager.Instance.AddIngredient(inventoryItem.Item);
+        InventoryManager.Instance.Decrement(inventoryItem);
+    }
+
+    public void OnCraftRemoveButton()
+    {
+        InventoryManager.Instance.Add(inventoryItem.Item);
+        CraftingManager.Instance.RemoveIngredient(inventoryItem.Item);
     }
 }
