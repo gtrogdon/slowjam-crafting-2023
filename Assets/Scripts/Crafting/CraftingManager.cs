@@ -49,6 +49,7 @@ public class CraftingManager : MonoBehaviour
         TryCrafting();
     }
 
+    /* Check all recipes if any can be crafted based on ingredients */ 
     private void TryCrafting()
     {
         foreach (Recipe recipe in Recipes.RecipeList)
@@ -73,6 +74,7 @@ public class CraftingManager : MonoBehaviour
         return;
     }
 
+    /* Check if recipe can be crafted */
     private bool TryCrafting(Recipe recipe)
     {
         if (recipe.CheckIngredients(currentIngredients))
@@ -100,10 +102,6 @@ public class CraftingManager : MonoBehaviour
         Debug.Log("Creating " + recipe.Name());
         InventoryManager.Instance.Add(recipe.OutputItem);
         ClearCurrentIngredients();
-        if (OnItemChangedCallback != null)
-        {
-            OnItemChangedCallback.Invoke();
-        }
     }
 
     private void ClearCurrentIngredients()
@@ -116,5 +114,14 @@ public class CraftingManager : MonoBehaviour
             }    
         }
         currentIngredients.Clear();
+        currentRecipe = null;
+        if (OnItemChangedCallback != null)
+        {
+            OnItemChangedCallback.Invoke();
+        }
+        if (OnRecipeChangedCallback != null)
+        {
+            OnRecipeChangedCallback.Invoke();
+        }
     }
 }

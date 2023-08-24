@@ -9,7 +9,7 @@ public class Recipe : ScriptableObject
 
     public bool CheckIngredients(List<ItemSO> inputs)
     {
-        if (Ingredients.Count == inputs.Count)
+        if (Ingredients.Count <= inputs.Count)
         {
             foreach (ItemSO item in Ingredients)
             {

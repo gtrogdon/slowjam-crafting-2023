@@ -10,7 +10,7 @@ public class CraftingUI : MonoBehaviour
     public Image ResultIcon;
 
     private CraftingManager craftingManager;
-    InventorySlot[] slots;
+    Slot[] slots;
 
     void Start()
     {
@@ -18,7 +18,7 @@ public class CraftingUI : MonoBehaviour
         craftingManager.OnItemChangedCallback += UpdateIngredientsUI;
         craftingManager.OnRecipeChangedCallback += UpdateOutputUI;
 
-        slots = SlotParent.GetComponentsInChildren<InventorySlot>();
+        slots = SlotParent.GetComponentsInChildren<Slot>();
 
         // Initial update for if this is being loaded after a scene transition,
         // otherwise inventory appears empty.

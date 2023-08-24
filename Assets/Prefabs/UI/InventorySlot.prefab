@@ -257,7 +257,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5881582069191782555}
         m_TargetAssemblyTypeName: InventorySlot, Assembly-CSharp
-        m_MethodName: OnInventoryRemoveButton
+        m_MethodName: OnRemoveButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -569,7 +569,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5881582069191782555}
         m_TargetAssemblyTypeName: InventorySlot, Assembly-CSharp
-        m_MethodName: OnBackPackSlotButton
+        m_MethodName: OnSlotButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

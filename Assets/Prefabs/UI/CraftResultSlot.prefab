@@ -220,10 +220,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3022495232207455817}
   - component: {fileID: 8036525278858321097}
-  - component: {fileID: 6015867685136521249}
+  - component: {fileID: 5241627542193313935}
   - component: {fileID: 1209831898347094839}
   m_Layer: 5
-  m_Name: ResultSlot
+  m_Name: CraftResultSlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -259,7 +259,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5876272615495796390}
   m_CullTransparentMesh: 1
---- !u!114 &6015867685136521249
+--- !u!114 &5241627542193313935
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -268,7 +268,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5876272615495796390}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6fe3241334e54ec09fd07438149f4be, type: 3}
+  m_Script: {fileID: 11500000, guid: 1967723e3dd0746b49891224d11ce053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Icon: {fileID: 7930958969713507384}

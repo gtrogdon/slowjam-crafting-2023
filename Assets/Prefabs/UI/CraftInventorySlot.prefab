@@ -121,9 +121,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1280919514384248007}
+      - m_Target: {fileID: 157379894207283843}
         m_TargetAssemblyTypeName: InventorySlot, Assembly-CSharp
-        m_MethodName: OnInventoryRemoveButton
+        m_MethodName: OnRemoveButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -353,10 +353,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2422616303008665989}
   - component: {fileID: 8715194913490901691}
-  - component: {fileID: 1280919514384248007}
+  - component: {fileID: 157379894207283843}
   - component: {fileID: 7827041844217400700}
   m_Layer: 5
-  m_Name: StorageSlots
+  m_Name: CraftInventorySlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -392,7 +392,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6467381724455302280}
   m_CullTransparentMesh: 1
---- !u!114 &1280919514384248007
+--- !u!114 &157379894207283843
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -401,7 +401,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6467381724455302280}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6fe3241334e54ec09fd07438149f4be, type: 3}
+  m_Script: {fileID: 11500000, guid: c7fd98d28b5554e65920c3a067e6f06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Icon: {fileID: 9219293310948870031}
@@ -530,9 +530,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1280919514384248007}
-        m_TargetAssemblyTypeName: InventorySlot, Assembly-CSharp
-        m_MethodName: OnStorageCraftSlotButton
+      - m_Target: {fileID: 157379894207283843}
+        m_TargetAssemblyTypeName: CraftInventorySlot, Assembly-CSharp
+        m_MethodName: OnSlotButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
