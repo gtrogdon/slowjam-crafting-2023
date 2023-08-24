@@ -4,13 +4,14 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance { get; private set; }
-    public InventoryUI UI;
+    public Inventory Inventory;
+    public ItemSO[] TestItems; // Test
 
     public delegate void OnItemChanged();
     public OnItemChanged OnItemChangedCallback;
 
-    public Inventory Inventory;
-    int maxItems = 4;
+    private InventoryUI UI;
+    int maxItems = 6;
 
     void Awake()
     {
@@ -27,7 +28,19 @@ public class InventoryManager : MonoBehaviour
 
      void Start() {
         UI = GetComponent<InventoryUI>();
-     }
+        InitializeTestItems();
+    }
+
+    void InitializeTestItems()
+    {
+        if (TestItems.Length > 0)
+        {
+            foreach (ItemSO item in TestItems)
+            {
+                Add(item);
+            }
+        }
+    }
 
     public bool Add(ItemSO item)
     {

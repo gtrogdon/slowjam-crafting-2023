@@ -3,12 +3,11 @@
 public class InventoryUI : MonoBehaviour
 {
     public Transform InventorySlots;
-    public GameObject Inventory;
+    public GameObject InventoryPanel;
 
     InventoryManager inventoryManager;
     InventorySlot[] slots;
 
-    // Use this for initialization
     void Start()
     {
         inventoryManager = InventoryManager.Instance;
@@ -19,12 +18,6 @@ public class InventoryUI : MonoBehaviour
         // Initial update for if this is being loaded after a scene transition,
         // otherwise inventory appears empty.
         UpdateUI();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     void UpdateUI()
@@ -44,6 +37,6 @@ public class InventoryUI : MonoBehaviour
 
     public void toggleInventoryUI()
     {
-        Inventory.SetActive(!Inventory.activeSelf);
+        InventoryPanel.SetActive(!InventoryPanel.activeSelf);
     }
 }
