@@ -3183,20 +3183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fcacb254cd094f13997d3e64ade1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  globalsInkFile:
-    compileAutomatically: 0
-    inkAsset: {fileID: 102900000, guid: 67e74c6c355004a88aecb6837e285313, type: 3}
-    jsonAssetDirectory: {fileID: 0}
-    jsonAsset: {fileID: 0}
-    unhandledCompileErrors: []
-    errors: []
-    warnings: []
-    todos: []
-    parents: []
-    masterInkAssets: []
-    masterInkAsset: {fileID: 0}
-    includePaths: []
-    includes: []
+  loadGlobalsJSON: {fileID: 4900000, guid: 9ef6e2d1e78e74a71b1d63aff7f60baa, type: 3}
   dialoguePanel: {fileID: 958186344}
   dialogueText: {fileID: 979391411}
   displayNameText: {fileID: 1590654085}
