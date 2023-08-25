@@ -5,6 +5,7 @@ public class VidPlayer : MonoBehaviour
 {
 
     [SerializeField] string videoFileName;
+    [SerializeField] GameObject placeHolderImage;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class VidPlayer : MonoBehaviour
             Debug.Log("videoPath: " + videoPath);
             videoPlayer.url = videoPath;
             videoPlayer.Play();
+            //placeHolderImage.SetActive(false);
         }
     }
 }
