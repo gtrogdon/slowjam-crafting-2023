@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311932, g: 0.38073996, b: 0.3587271, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1427,7 +1427,7 @@ Transform:
   m_GameObject: {fileID: 639476574}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.033934, y: -4.0999327, z: 21.810001}
+  m_LocalPosition: {x: -26.360302, y: -4.0999327, z: 21.810001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3482,20 +3482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fcacb254cd094f13997d3e64ade1978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  globalsInkFile:
-    compileAutomatically: 0
-    inkAsset: {fileID: 102900000, guid: 67e74c6c355004a88aecb6837e285313, type: 3}
-    jsonAssetDirectory: {fileID: 0}
-    jsonAsset: {fileID: 0}
-    unhandledCompileErrors: []
-    errors: []
-    warnings: []
-    todos: []
-    parents: []
-    masterInkAssets: []
-    masterInkAsset: {fileID: 0}
-    includePaths: []
-    includes: []
+  loadGlobalsJSON: {fileID: 4900000, guid: 9ef6e2d1e78e74a71b1d63aff7f60baa, type: 3}
   dialoguePanel: {fileID: 264516959}
   dialogueText: {fileID: 952000535}
   displayNameText: {fileID: 984862815}
