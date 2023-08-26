@@ -9,14 +9,9 @@ public class DialogueVariables
 {
     public Dictionary<string, Ink.Runtime.Object> variables { get;  private set; }
 
-    public DialogueVariables(string globalsFilePath)
+    public DialogueVariables(TextAsset loadGlobalsJSON)
     {
-        // compile the globals file, it's an includes file so it won't have a json
-        // compiling can take a while so avoid doing this, but it's ok for this one globals file
-        string inkFileContents = File.ReadAllText(globalsFilePath);
-        Ink.Compiler compiler = new Ink.Compiler(inkFileContents);
-        Story globalVariablesStory = compiler.Compile();
-
+        Story globalVariablesStory = new Story(loadGlobalsJSON.text);
         // initialize dictionary
         variables = new Dictionary<string, Ink.Runtime.Object>();
         foreach (string name in globalVariablesStory.variablesState)
