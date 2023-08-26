@@ -3928,13 +3928,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f3efec7cf186734e83c444dbf4febf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <titleMusic>k__BackingField:
+  <music>k__BackingField:
     Guid:
-      Data1: 2039693550
-      Data2: 1149439951
-      Data3: -1611698544
-      Data4: -143268844
-    Path: event:/Music/TitleMusic
+      Data1: 1861090210
+      Data2: 1271910064
+      Data3: -1726426733
+      Data4: 1408078147
+    Path: event:/Music/OutsideMusic
   <playerFootsteps>k__BackingField:
     Guid:
       Data1: 1442574956

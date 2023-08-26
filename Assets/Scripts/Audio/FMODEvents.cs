@@ -8,9 +8,8 @@ using System.CodeDom;
 public class FMODEvents : MonoBehaviour
 {
 
-    [field: Header("Title Music")]
-    [field:SerializeField] public EventReference titleMusic { get; private set; }
-
+    [field: Header("Music")]
+    [field:SerializeField] public EventReference music { get; private set; }
 
     [field: Header("Footsteps SFX")]
 
