@@ -1395,6 +1395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Recipes: {fileID: 11400000, guid: c22cb2368f0c5481fbb4a453a6916e25, type: 2}
+  Dookie: {fileID: 11400000, guid: a7cdb89418dc04a32a09849706be60ac, type: 2}
 --- !u!114 &378541430
 MonoBehaviour:
   m_ObjectHideFlags: 0
