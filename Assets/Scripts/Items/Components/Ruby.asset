@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b490b07ad6f47400082b4e93bfbe97be, type: 3}
-  m_Name: DuctTape
+  m_Name: Ruby
   m_EditorClassIdentifier: 
-  Name: duct tape
-  Description: Can fix anything.
+  Name: ruby
+  Description: Bright and red!
   Type: 1
-  Icon: {fileID: 21300000, guid: 7429a715aa6867d4684013569ca730a2, type: 3}
+  Icon: {fileID: 21300000, guid: 0cd67d34ce18a1c45b2e057dc5139263, type: 3}
