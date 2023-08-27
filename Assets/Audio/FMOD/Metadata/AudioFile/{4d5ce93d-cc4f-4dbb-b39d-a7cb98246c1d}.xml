@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{4d5ce93d-cc4f-4dbb-b39d-a7cb98246c1d}">
+		<property name="assetPath">
+			<value>craft_02.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.81425000000000003</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{30fc093b-4756-4755-af4c-34fa615d7a1b}</destination>
+		</relationship>
+	</object>
+</objects>
