@@ -12,12 +12,16 @@ public class FMODEvents : MonoBehaviour
     [field:SerializeField] public EventReference music { get; private set; }
 
     [field: Header("Footsteps SFX")]
-
     [field:SerializeField] public EventReference playerFootsteps { get; private set; }
 
     [field: Header("Pickup SFX")]
-
     [field: SerializeField] public EventReference itemPickup { get; private set; }
+
+    [field: Header("Inventory Toggle")]
+    [field: SerializeField] public EventReference inventoryToggle { get; private set; }
+
+    [field: Header("Button Press")]
+    [field: SerializeField] public EventReference buttonPress { get; private set; }
 
 
     public static FMODEvents instance { get; private set; }
