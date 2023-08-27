@@ -1405,6 +1405,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8086255e948b5ab4da99c49b65d87ba1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &587256579 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2023107870722072323, guid: a8da5695f75321e4b8edbe3239d51533, type: 3}
+  m_PrefabInstance: {fileID: 1354691847}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &639476574
 GameObject:
   m_ObjectHideFlags: 0
@@ -2204,6 +2209,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1896851127}
+        m_TargetAssemblyTypeName: ButtonClickAudio, Assembly-CSharp
+        m_MethodName: PlaySoundEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &944100044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2510,6 +2527,69 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1020566858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1020566859}
+  - component: {fileID: 1020566860}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1020566859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020566858}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.85, y: -2.22, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2146789692}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1020566860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020566858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1021287549
+      Data2: 1176119517
+      Data3: -254353223
+      Data4: 622098856
+    Path: event:/SFX/SignBuzzing
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 40
 --- !u!1 &1057173354
 GameObject:
   m_ObjectHideFlags: 0
@@ -2601,6 +2681,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1896851127}
+        m_TargetAssemblyTypeName: ButtonClickAudio, Assembly-CSharp
+        m_MethodName: PlaySoundEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3232,7 +3324,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7357170594646929080, guid: a8da5695f75321e4b8edbe3239d51533, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1080154510}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2023107870722072323, guid: a8da5695f75321e4b8edbe3239d51533, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1645716753}
   m_SourcePrefab: {fileID: 100100000, guid: a8da5695f75321e4b8edbe3239d51533, type: 3}
 --- !u!1 &1419406184
 GameObject:
@@ -3303,6 +3398,69 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1501227664167328419, guid: 236da44bae154984abd896caf379d70b, type: 3}
   m_PrefabInstance: {fileID: 44284108}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1441032509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1441032510}
+  - component: {fileID: 1441032511}
+  m_Layer: 0
+  m_Name: vending machine audio source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1441032510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441032509}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.32, y: -8.14, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1732598539}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1441032511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441032509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1779305669
+      Data2: 1195582258
+      Data3: 1554573983
+      Data4: 1664048354
+    Path: event:/SFX/VendingMachine
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1488549810
 GameObject:
   m_ObjectHideFlags: 0
@@ -3647,6 +3805,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7357170594646929080, guid: a8da5695f75321e4b8edbe3239d51533, type: 3}
   m_PrefabInstance: {fileID: 1354691847}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1645716753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587256579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1614385876
+      Data2: 1180334058
+      Data3: 1778804625
+      Data4: -1773097339
+    Path: event:/SFX/ScoopIdle
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 40
 --- !u!1 &1732598538
 GameObject:
   m_ObjectHideFlags: 0
@@ -3676,7 +3865,8 @@ Transform:
   m_LocalPosition: {x: 18.03, y: 55.65, z: -71.16}
   m_LocalScale: {x: 1.15, y: 1.15, z: 1.15}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 1441032510}
   m_Father: {fileID: 528741711}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1732598540
@@ -3894,6 +4084,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1896851125}
   - component: {fileID: 1896851126}
+  - component: {fileID: 1896851127}
   m_Layer: 0
   m_Name: FMODEvents
   m_TagString: Untagged
@@ -3935,20 +4126,54 @@ MonoBehaviour:
       Data3: -1726426733
       Data4: 1408078147
     Path: event:/Music/OutsideMusic
+  <ambience>k__BackingField:
+    Guid:
+      Data1: -1692154126
+      Data2: 1235447709
+      Data3: 1465690263
+      Data4: -734555827
+    Path: event:/SFX/TreeAmbience
   <playerFootsteps>k__BackingField:
     Guid:
       Data1: 1442574956
       Data2: 1304419001
       Data3: -905582166
       Data4: 991183681
-    Path: event:/PlayerFootsteps
+    Path: event:/SFX/PlayerFootsteps
   <itemPickup>k__BackingField:
     Guid:
       Data1: 1171317324
       Data2: 1325973464
       Data3: -1673339465
       Data4: -204742681
-    Path: event:/ItemPickup
+    Path: event:/SFX/ItemPickup
+  <inventoryToggle>k__BackingField:
+    Guid:
+      Data1: -721828136
+      Data2: 1191547533
+      Data3: 1893209996
+      Data4: -530439145
+    Path: event:/SFX/InventoryToggle
+  <buttonPress>k__BackingField:
+    Guid:
+      Data1: -876766199
+      Data2: 1320270238
+      Data3: -450914142
+      Data4: -1910210040
+    Path: event:/SFX/ButtonPress
+--- !u!114 &1896851127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896851124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63c0c3fc343c98947bf0a69104b0c102, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEvent: event:/SFX/ButtonPress
 --- !u!1 &1926001906
 GameObject:
   m_ObjectHideFlags: 0
@@ -4593,6 +4818,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2146789692}
   - component: {fileID: 2146789691}
+  - component: {fileID: 2146789693}
   m_Layer: 0
   m_Name: tent
   m_TagString: Untagged
@@ -4664,9 +4890,41 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -0.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1020566859}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2146789693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146789690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1021287549
+      Data2: 1176119517
+      Data3: -254353223
+      Data4: 622098856
+    Path: event:/SFX/SignBuzzing
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &3682394447751697109
 PrefabInstance:
   m_ObjectHideFlags: 0

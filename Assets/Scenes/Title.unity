@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 155656935}
   - component: {fileID: 155656934}
   - component: {fileID: 155656933}
+  - component: {fileID: 155656936}
   m_Layer: 5
   m_Name: PlayButton
   m_TagString: Untagged
@@ -263,6 +264,18 @@ MonoBehaviour:
           m_StringArgument: City
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 239713928}
+        m_TargetAssemblyTypeName: ButtonClickAudio, Assembly-CSharp
+        m_MethodName: PlaySoundEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &155656934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,6 +314,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155656931}
   m_CullTransparentMesh: 1
+--- !u!114 &155656936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155656931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63c0c3fc343c98947bf0a69104b0c102, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEvent: 
 --- !u!1 &239713925
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,6 +337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 239713926}
   - component: {fileID: 239713927}
+  - component: {fileID: 239713928}
   m_Layer: 0
   m_Name: FMODEvents
   m_TagString: Untagged
@@ -352,6 +379,13 @@ MonoBehaviour:
       Data3: -1611698544
       Data4: -143268844
     Path: event:/Music/TitleMusic
+  <ambience>k__BackingField:
+    Guid:
+      Data1: -707459475
+      Data2: 1082098933
+      Data3: 530313393
+      Data4: 1396120037
+    Path: event:/SFX/AmbiencePlaceholder
   <playerFootsteps>k__BackingField:
     Guid:
       Data1: 0
@@ -366,6 +400,33 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  <inventoryToggle>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <buttonPress>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+--- !u!114 &239713928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239713925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63c0c3fc343c98947bf0a69104b0c102, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEvent: event:/SFX/ButtonPress
 --- !u!1 &287419026
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,6 +1091,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 239713928}
+        m_TargetAssemblyTypeName: ButtonClickAudio, Assembly-CSharp
+        m_MethodName: PlaySoundEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &497043426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1332,6 +1405,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1717065427}
         m_TargetAssemblyTypeName: QuitScript, Assembly-CSharp
         m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 239713928}
+        m_TargetAssemblyTypeName: ButtonClickAudio, Assembly-CSharp
+        m_MethodName: PlaySoundEvent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1867,6 +1952,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1717065426}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: ToggleCreditsUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 239713928}
+        m_TargetAssemblyTypeName: ButtonClickAudio, Assembly-CSharp
+        m_MethodName: PlaySoundEvent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

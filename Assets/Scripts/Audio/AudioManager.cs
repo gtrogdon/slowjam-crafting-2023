@@ -4,11 +4,14 @@ using System.Diagnostics;
 using UnityEngine;
 using FMODUnity;
 using FMOD.Studio;
+using System.CodeDom;
 
 public class AudioManager : MonoBehaviour
 {
 
     private List<EventInstance> eventInstances;
+
+    private EventInstance ambienceEventInstance;
 
     private EventInstance musicEventInstance;
 
@@ -18,6 +21,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
+        InitializeAmbience(FMODEvents.instance.ambience);
         InitializeMusic(FMODEvents.instance.music);
     }
 
@@ -42,6 +46,12 @@ public class AudioManager : MonoBehaviour
         EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
         eventInstances.Add(eventInstance);
         return eventInstance;
+    }
+
+    private void InitializeAmbience(EventReference ambienceEventReference)
+    {
+        ambienceEventInstance = CreateEventInstance(ambienceEventReference);
+        ambienceEventInstance.start();
     }
 
     private void InitializeMusic(EventReference musicEventReference)
