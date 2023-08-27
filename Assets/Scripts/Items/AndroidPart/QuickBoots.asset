@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b490b07ad6f47400082b4e93bfbe97be, type: 3}
-  m_Name: DuctTape
+  m_Name: QuickBoots
   m_EditorClassIdentifier: 
-  Name: duct tape
-  Description: Can fix anything.
-  Type: 1
-  Icon: {fileID: 21300000, guid: 7429a715aa6867d4684013569ca730a2, type: 3}
+  Name: quick boots
+  Description: At least they won't fall off
+  Type: 2
+  Icon: {fileID: 21300000, guid: 9fa88609167f8d6419e6c27d0e98a0b7, type: 3}

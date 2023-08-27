@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b490b07ad6f47400082b4e93bfbe97be, type: 3}
-  m_Name: DuctTape
+  m_Name: Titanium Cranium
   m_EditorClassIdentifier: 
-  Name: duct tape
-  Description: Can fix anything.
-  Type: 1
-  Icon: {fileID: 21300000, guid: 7429a715aa6867d4684013569ca730a2, type: 3}
+  Name: titanium cranium
+  Description: Extremely durable and rather stylish.
+  Type: 2
+  Icon: {fileID: 21300000, guid: 1a1672ecb91a340409625a4b15865900, type: 3}
