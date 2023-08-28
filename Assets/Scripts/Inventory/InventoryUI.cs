@@ -38,5 +38,6 @@ public class InventoryUI : MonoBehaviour
     public void toggleInventoryUI()
     {
         InventoryPanel.SetActive(!InventoryPanel.activeSelf);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.inventoryToggle, this.transform.position);
     }
 }

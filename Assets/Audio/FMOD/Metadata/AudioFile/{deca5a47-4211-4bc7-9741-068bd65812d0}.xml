@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{deca5a47-4211-4bc7-9741-068bd65812d0}">
+		<property name="assetPath">
+			<value>scoop_idle_01.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>192</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>7.833333333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{30fc093b-4756-4755-af4c-34fa615d7a1b}</destination>
+		</relationship>
+	</object>
+</objects>

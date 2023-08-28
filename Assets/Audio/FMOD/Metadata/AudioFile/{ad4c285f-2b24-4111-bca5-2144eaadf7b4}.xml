@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{ad4c285f-2b24-4111-bca5-2144eaadf7b4}">
+		<property name="assetPath">
+			<value>ESM_Perfect_Clean_App_Button_Click_2_Organic_Simple_Classic_Game_Click.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.37498866213151927</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{30fc093b-4756-4755-af4c-34fa615d7a1b}</destination>
+		</relationship>
+	</object>
+</objects>

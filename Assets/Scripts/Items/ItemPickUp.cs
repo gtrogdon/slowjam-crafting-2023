@@ -18,6 +18,7 @@ public class ItemPickUp : MonoBehaviour
         if (collected)
         {
             Debug.Log("Item Collected");
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.itemPickup, this.transform.position);
             Destroy(this.gameObject);
         }
     }
