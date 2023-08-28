@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b490b07ad6f47400082b4e93bfbe97be, type: 3}
-  m_Name: Scissors
+  m_Name: Card1
   m_EditorClassIdentifier: 
-  Name: scissors
-  Description: Snip Snip
-  Type: 0
-  Icon: {fileID: 21300000, guid: fd5eb245c66957947a9b7526aa129ac2, type: 3}
-  Price: 5
+  Name: Card1
+  Description: Must be useful for something..
+  Type: 2
+  Icon: {fileID: 21300000, guid: 7ed5bc89e05580c4db747ddd72e4d5f0, type: 3}

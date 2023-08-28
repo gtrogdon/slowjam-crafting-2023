@@ -7,6 +7,7 @@ public class ItemSO : ScriptableObject
     public string Description;
     public ItemType Type;
     public Sprite Icon;
+    public int Price = 1;
 
     public virtual void Use()
     {
