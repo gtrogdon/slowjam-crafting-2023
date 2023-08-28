@@ -15,7 +15,7 @@ public class InventoryManager : MonoBehaviour
 
     void Awake()
     {
-        if (Instance != null && Instance !=this)
+        if (Instance != null && Instance != this)
         {
             Destroy(this);
             return;
@@ -24,9 +24,10 @@ public class InventoryManager : MonoBehaviour
         {
             Instance = this;
         }
-     }
+    }
 
-     void Start() {
+    void Start()
+    {
         UI = GetComponent<InventoryUI>();
         InitializeTestItems();
     }
@@ -87,16 +88,36 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
+    public void Decrement(string name, int count)
+    {
+        int index = SearchForItemByName(name);
+        InventoryItem inventoryItem = Inventory.InventoryItems[index];
+        if (index > -1)
+        {
+            inventoryItem.Count -= count;
+            if (inventoryItem.Count <= 0)
+            {
+                Inventory.InventoryItems.RemoveAt(index);
+            }
+        }
+        if (OnItemChangedCallback != null)
+        {
+            OnItemChangedCallback.Invoke();
+        }
+    }
+
     public void Decrement(InventoryItem inventoryItem)
+    {
+        Decrement(inventoryItem, 1);
+    }
+
+    public void Decrement(InventoryItem inventoryItem, int count)
     {
         int index = SearchForItem(inventoryItem.Item);
         if (index > -1)
         {
-            if (inventoryItem.Count > 1)
-            {
-                Inventory.InventoryItems[index].Count--;
-            }
-            else
+            inventoryItem.Count -= count;
+            if (inventoryItem.Count <= 0)
             {
                 Inventory.InventoryItems.RemoveAt(index);
             }
@@ -119,7 +140,35 @@ public class InventoryManager : MonoBehaviour
         return -1;
     }
 
-    public void toggleInventoryUI() {
+    public int SearchForItemByName(string itemName)
+    {
+        for (int i = 0; i < Inventory.InventoryItems.Count; i++)
+        {
+            if (Inventory.InventoryItems[i].Item.Name == itemName)
+            {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public void toggleInventoryUI()
+    {
         UI.toggleInventoryUI();
+    }
+
+    public int GetDookieCount()
+    {
+        int index = SearchForItemByName("Dookie");
+        if (index >= 0)
+        {
+            return Inventory.InventoryItems[index].Count;
+        }
+        return 0;
+    }
+
+    public void DecrementDookieCount(int countChange)
+    {
+        Decrement("Dookie", countChange);
     }
 }
