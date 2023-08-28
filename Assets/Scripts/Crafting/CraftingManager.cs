@@ -13,6 +13,7 @@ public class CraftingManager : MonoBehaviour
     public OnItemChanged OnItemChangedCallback;
     public delegate void OnRecipeChanged();
     public OnRecipeChanged OnRecipeChangedCallback;
+    public Recipe Dookie;
 
     void Awake()
     {
@@ -64,6 +65,14 @@ public class CraftingManager : MonoBehaviour
                 }
                 return;
             }
+        }
+        if (CheckDookie())
+        {
+            if (OnRecipeChangedCallback != null)
+            {
+                OnRecipeChangedCallback.Invoke();
+            }
+            return;
         }
         Debug.Log("Craft Fail");
         if (currentRecipe && OnRecipeChangedCallback != null)
@@ -123,5 +132,15 @@ public class CraftingManager : MonoBehaviour
         {
             OnRecipeChangedCallback.Invoke();
         }
+    }
+
+    public bool CheckDookie()
+    {
+        if (currentIngredients.Count >= 3)
+        {
+            currentRecipe = Dookie;
+            return true;
+        }
+        return false;
     }
 }
