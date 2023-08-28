@@ -3426,32 +3426,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4840744464850423466, guid: abf5792d9f730314c97207fb94b45037, type: 3}
       propertyPath: TestItems.Array.size
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4840744464850423466, guid: abf5792d9f730314c97207fb94b45037, type: 3}
       propertyPath: TestItems.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 56bf3b3985cd90c418580b5d3578ee2c, type: 2}
+      objectReference: {fileID: 11400000, guid: 6cdb3ed1d28860d4e9c2a78b5570c280, type: 2}
     - target: {fileID: 4840744464850423466, guid: abf5792d9f730314c97207fb94b45037, type: 3}
       propertyPath: TestItems.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 6b7fdbe47b6de664990dd555f976ee71, type: 2}
+      objectReference: {fileID: 11400000, guid: 63bbd8f2b70a1464badbcfc4c6dc0b04, type: 2}
     - target: {fileID: 4840744464850423466, guid: abf5792d9f730314c97207fb94b45037, type: 3}
       propertyPath: TestItems.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: d44d22e6dacdc4f0bbadfc9f55760f98, type: 2}
+      objectReference: {fileID: 11400000, guid: 0b177071615a048ecb56cc1dcf7ac543, type: 2}
     - target: {fileID: 4840744464850423466, guid: abf5792d9f730314c97207fb94b45037, type: 3}
       propertyPath: TestItems.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: 270b999b834c4ad42a6f011011e4c9c0, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4840744464850423466, guid: abf5792d9f730314c97207fb94b45037, type: 3}
       propertyPath: TestItems.Array.data[4]
       value: 
-      objectReference: {fileID: 11400000, guid: 175d35c3c71f637419159b2e0fd7cb30, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4840744464850423466, guid: abf5792d9f730314c97207fb94b45037, type: 3}
       propertyPath: TestItems.Array.data[5]
       value: 
-      objectReference: {fileID: 11400000, guid: 56bf3b3985cd90c418580b5d3578ee2c, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4840744464850423466, guid: abf5792d9f730314c97207fb94b45037, type: 3}
       propertyPath: TestItems.Array.data[6]
       value: 
