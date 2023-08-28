@@ -36,6 +36,7 @@ public class DialogueManager : MonoBehaviour
     private const string PORTRAIT_TAG = "portrait";
     private const string LAYOUT_TAG = "layout";
     private DialogueVariables dialogueVariables;
+    private InkExternalFunctions inkExternalFunctions;
 
     void Awake()
     {
@@ -46,6 +47,7 @@ public class DialogueManager : MonoBehaviour
         }
         Instance = this;
         dialogueVariables = new DialogueVariables(loadGlobalsJSON);
+        inkExternalFunctions = new InkExternalFunctions();
     }
 
     void Start()
@@ -62,21 +64,6 @@ public class DialogueManager : MonoBehaviour
             index++;
         }
 
-    }
-
-    void Update()
-    {
-        //if (!dialogueIsPlaying)
-        //{
-        //    return;
-        //}
-        //else
-        //{
-        //    if (InputManager.Instance.GetSubmitPressed())
-        //    {
-        //        ContinueStory();
-        //    }
-        //}
     }
 
     public void NextDialogue()
@@ -100,6 +87,7 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(true);
 
         dialogueVariables.StartListening(currentStory);
+        inkExternalFunctions.Bind(currentStory);
 
         // reset speaker, protrait, layout
         displayNameText.text = "???";
@@ -122,9 +110,16 @@ public class DialogueManager : MonoBehaviour
     {
         if (currentStory.canContinue)
         {
-            dialogueText.text = currentStory.Continue();
+            string nextLine = currentStory.Continue();
+            if (nextLine.Equals("") && !currentStory.canContinue) // if last line external function, avoid showing empty string
+            {
+                ExitDialogueMode();
+                return;
+            }
+            dialogueText.text = nextLine;
             DisplayChoices();
             HandleTags(currentStory.currentTags);
+
         }
         else
         {

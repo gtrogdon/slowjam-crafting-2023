@@ -1,4 +1,5 @@
 INCLUDE Globals.ink
+EXTERNAL openShopUI()
 
 -> merchant
 
@@ -10,6 +11,7 @@ May I interest you in some wares? *beep boop* #speaker:Merchant
 === buy ===
 Yes please. #speaker:{playerName}
  You won't regret it. *beep boop* #speaker:Merchant
+ ~ openShopUI()
 -> DONE
  
 === nobuy ===
