@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5f3200e413694e0884da95b6390da26, type: 3}
   m_Name: SafeChassis
   m_EditorClassIdentifier: 
-  OutputItem: {fileID: 11400000, guid: e44d3d0f9a35a5e4e937182d2faefc95, type: 2}
+  OutputItem: {fileID: 11400000, guid: a172ec11cfe202e469c0910f60fbe96a, type: 2}
   Ingredients:
   - {fileID: 11400000, guid: 5ca5f8fd8c01946c18837f96ea8bce42, type: 2}
-  - {fileID: 11400000, guid: 3eeb178e7be490c4abb0ab4b78e0a3ec, type: 2}
-  - {fileID: 11400000, guid: 0d31b66e49ba5f44cbeea8528ec81933, type: 2}
-  - {fileID: 11400000, guid: 56bf3b3985cd90c418580b5d3578ee2c, type: 2}
+  - {fileID: 11400000, guid: 70014b3b762f11c4090f832c215b65cf, type: 2}
+  - {fileID: 11400000, guid: d7e13be8059c32340ba52a54cb5f1bae, type: 2}
+  - {fileID: 11400000, guid: 28002d1ab33421243bb2deb9e04cc1c4, type: 2}
