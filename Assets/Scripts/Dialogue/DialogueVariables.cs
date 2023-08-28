@@ -1,26 +1,27 @@
 ﻿using UnityEngine;
 using Ink.Runtime;
 using System.Collections.Generic;
-using System.IO;
+using System;
 
 /* Create Dictionary of Story variables
  * Subscribe and Unsubscribe when story variables changes */
 public class DialogueVariables
 {
-    public Dictionary<string, Ink.Runtime.Object> variables { get;  private set; }
+    public static Dictionary<string, Ink.Runtime.Object> variables { get;  private set; }
 
     public DialogueVariables(TextAsset loadGlobalsJSON)
     {
         Story globalVariablesStory = new Story(loadGlobalsJSON.text);
-        // initialize dictionary
-        variables = new Dictionary<string, Ink.Runtime.Object>();
-        foreach (string name in globalVariablesStory.variablesState)
-        {
-            Ink.Runtime.Object value = globalVariablesStory.variablesState.GetVariableWithName(name);
-            variables.Add(name, value);
-            Debug.Log("Initialized global dialogue variable: " + name + ":" + value);
+        // initialize dictionary unless it is already defined
+        if (variables == null) {
+            variables = new Dictionary<string, Ink.Runtime.Object>();
+            foreach (string name in globalVariablesStory.variablesState)
+            {
+                Ink.Runtime.Object value = globalVariablesStory.variablesState.GetVariableWithName(name);
+                variables.Add(name, value);
+                Debug.Log("Initialized global dialogue variable: " + name + ":" + value);
+            }
         }
-
     }
 
     public void StartListening(Story story)
@@ -66,5 +67,9 @@ public class DialogueVariables
                 Debug.Log("no need to set");
             }
         }
+    }
+
+    public bool TryGetValue(string name, Ink.Runtime.Object value) {
+        return variables.TryGetValue(name, out value);
     }
 }

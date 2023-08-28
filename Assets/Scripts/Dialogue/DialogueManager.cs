@@ -4,7 +4,6 @@ using UnityEngine;
 using TMPro;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
-using FMODUnity;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -208,7 +207,7 @@ public class DialogueManager : MonoBehaviour
     public Ink.Runtime.Object GetVariableState(string variableName)
     {
         Ink.Runtime.Object variableValue = null;
-        dialogueVariables.variables.TryGetValue(variableName, out variableValue);
+        dialogueVariables.TryGetValue(variableName, variableValue);
         if (variableValue == null)
         {
             Debug.LogWarning("Ink Variable was not found: " + variableName);
