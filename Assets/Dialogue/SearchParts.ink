@@ -1,4 +1,7 @@
 === search_parts ===
+{ armCrafted == true: -> giveArm | -> search_parts }
+
+=== arm ===
 Have you found anything useful? #speaker:Eva
  + {foundParts} [Yes] -> found_parts 
  + {!foundParts} [Still working on it.] -> looking_for_parts
@@ -15,3 +18,11 @@ Still working on it.. #speaker:Laura
   ... #speaker:Laura
 
 -> DONE
+
+=== giveArm ===
+What have you got there? #speaker:Eva
+    * {paperArm} *hand over PaperMacheArm*
+     ... at least it's pretty...
+    * {pipeArm} *hand over Pipe Arm*
+     Can't pick up items with this, but at least it's good for putting up a fight.
+-> Done
