@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dookie
   m_EditorClassIdentifier: 
   Name: Dookie
-  Description: What is it? It's a Dookie.
+  Description: what even is this? it's a dookie.
   Type: 1
   Icon: {fileID: 21300000, guid: 26ed375170a57754badaf0f064e72636, type: 3}
   Price: 1
