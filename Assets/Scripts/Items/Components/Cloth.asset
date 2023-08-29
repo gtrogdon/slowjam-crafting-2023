@@ -16,3 +16,4 @@ MonoBehaviour:
   Description: Is this cashmere?
   Type: 1
   Icon: {fileID: 21300000, guid: d92cf58eacc19414d880c304c80f8ef1, type: 3}
+  Price: 3

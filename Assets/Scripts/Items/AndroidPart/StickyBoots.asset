@@ -16,3 +16,4 @@ MonoBehaviour:
   Description: "At least they won\u2019t fall off..."
   Type: 2
   Icon: {fileID: 21300000, guid: 9169b6524e626f5458ddaf6bd4549eb6, type: 3}
+  Price: 50

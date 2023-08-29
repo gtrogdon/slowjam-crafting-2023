@@ -430,7 +430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DefaultItems:
   - {fileID: 11400000, guid: 0b177071615a048ecb56cc1dcf7ac543, type: 2}
-  - {fileID: 11400000, guid: 28002d1ab33421243bb2deb9e04cc1c4, type: 2}
+  - {fileID: 11400000, guid: 5ca5f8fd8c01946c18837f96ea8bce42, type: 2}
   - {fileID: 11400000, guid: 6cdb3ed1d28860d4e9c2a78b5570c280, type: 2}
   - {fileID: 11400000, guid: 5d701106f5b6ff446ada71f7e373a580, type: 2}
   - {fileID: 11400000, guid: d7e13be8059c32340ba52a54cb5f1bae, type: 2}

@@ -16,3 +16,4 @@ MonoBehaviour:
   Description: "This is beautiful, but it won\u2019t do much in the wild..."
   Type: 2
   Icon: {fileID: 21300000, guid: facad72a8c14338498fe64dbbe15cd0f, type: 3}
+  Price: 50

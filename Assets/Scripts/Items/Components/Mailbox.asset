@@ -16,3 +16,4 @@ MonoBehaviour:
   Description: There's an abandon nest inside.
   Type: 1
   Icon: {fileID: 21300000, guid: 9acae1d2154bb054ba0320adf5e45328, type: 3}
+  Price: 3

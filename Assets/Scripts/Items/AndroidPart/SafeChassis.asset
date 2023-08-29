@@ -16,3 +16,4 @@ MonoBehaviour:
   Description: "Robust and protective\u2026 and a storage compartment!"
   Type: 2
   Icon: {fileID: 21300000, guid: fd92adc80ad5dd34cb20b1163a930e55, type: 3}
+  Price: 50
