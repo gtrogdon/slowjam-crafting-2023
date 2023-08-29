@@ -1,13 +1,14 @@
 === intro ===
-I can't believe we're alive. We're alive right? How do I look? #speaker:{androidName}
- * Oh no, {androidName}! Looks like your arm took a beating.. #speaker:{playerName}
- * Wow, {androidName}.. You look great.. #speaker:{playerName}
-    Very funny... #speaker:{androidName}
-     Yea.. you're not in great shape. Your arm definitely needs fixing.. #speaker:{playerName}
-- Ah, a souvenir from our daring exploits. But I'd prefer it in working condition, if you don't mind. #speaker:{androidName}
- We'll get you fixed up in no time. #speaker:{playerName}
-~ setIntroPlayedTrue()
-
+Jesus christ.  #speaker:Laura
+ I know. It’s not pretty. #speaker:Eva
+  Looks… fixable, though. #speaker:Laura
+   This is definitely above your paygrade, lieutenant. #speaker:Eva
+    … #speaker:Laura
+     Maybe this effort is better spent patching up your leg. #speaker:Eva
+      …I’m going to go out again. Look for supplies. We can at least fix up your arm. #speaker:Laura
+       Fine. #speaker:Eva
+        Fine. #speaker:Laura
+        ~ setIntroPlayedTrue()
 -> DONE
 
 === function setIntroPlayedTrue() ===  

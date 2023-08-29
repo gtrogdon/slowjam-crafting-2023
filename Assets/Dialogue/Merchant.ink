@@ -14,6 +14,6 @@ Yes please. #speaker:Laura
 -> DONE
  
 === nobuy ===
-No thanks. #speaker:{playerName}
+No thanks. #speaker:Laura
  Ok. Let me know if you change your mind. #speaker:Scoop
 -> DONE
