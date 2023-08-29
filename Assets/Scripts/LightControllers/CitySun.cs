@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.Analytics;
+//using UnityEditor.Analytics;
 
 public class CitySunScript : MonoBehaviour
 {
