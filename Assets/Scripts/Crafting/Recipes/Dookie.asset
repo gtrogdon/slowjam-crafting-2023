@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5f3200e413694e0884da95b6390da26, type: 3}
   m_Name: Dookie
   m_EditorClassIdentifier: 
-  OutputItem: {fileID: 11400000, guid: 244419e4d9ea34d43bf1757574eb0d20, type: 2}
+  OutputItem: {fileID: 11400000, guid: e5bfa60a2668540679ed1eaf83278d71, type: 2}
   Ingredients:
-  - {fileID: 11400000, guid: 244419e4d9ea34d43bf1757574eb0d20, type: 2}
-  - {fileID: 11400000, guid: 244419e4d9ea34d43bf1757574eb0d20, type: 2}
-  - {fileID: 11400000, guid: 244419e4d9ea34d43bf1757574eb0d20, type: 2}
-  - {fileID: 11400000, guid: 244419e4d9ea34d43bf1757574eb0d20, type: 2}
-  - {fileID: 11400000, guid: 244419e4d9ea34d43bf1757574eb0d20, type: 2}
+  - {fileID: 11400000, guid: e5bfa60a2668540679ed1eaf83278d71, type: 2}
+  - {fileID: 11400000, guid: e5bfa60a2668540679ed1eaf83278d71, type: 2}
+  - {fileID: 11400000, guid: e5bfa60a2668540679ed1eaf83278d71, type: 2}
+  - {fileID: 11400000, guid: e5bfa60a2668540679ed1eaf83278d71, type: 2}
+  - {fileID: 11400000, guid: e5bfa60a2668540679ed1eaf83278d71, type: 2}
