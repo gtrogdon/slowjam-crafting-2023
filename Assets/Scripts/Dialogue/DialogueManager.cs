@@ -14,6 +14,8 @@ public class DialogueManager : MonoBehaviour
 
     // Test
     private bool isFoundParts = false;
+    private bool isPaperArm = false;
+    private bool isPipeArm = false;
 
     [Header("Load Globals JSON")]
     [SerializeField] private TextAsset loadGlobalsJSON;
@@ -80,6 +82,7 @@ public class DialogueManager : MonoBehaviour
 
     public void EnterDialogueMode(TextAsset inkJSON)
     {
+        InventoryManager.Instance.DialogueChecks(); // LOL merp
         currentStory = new Story(inkJSON.text);
         UpdateStoryVariables();
 
@@ -225,12 +228,34 @@ public class DialogueManager : MonoBehaviour
         isFoundParts = true;
     }
 
+    public void SetPipeArm()
+    {
+        isPipeArm = true;
+    }
+
+    public void SetPaperArm()
+    {
+        isPaperArm = true;
+    }
+
     private void UpdateStoryVariables()
     {
         if (isFoundParts)
         {
             Ink.Runtime.Object value = Ink.Runtime.Value.Create(true);
             dialogueVariables.SetVariable("foundParts", value);
+        }
+        if (isPipeArm)
+        {
+            Ink.Runtime.Object value = Ink.Runtime.Value.Create(true);
+            dialogueVariables.SetVariable("pipeArm", value);
+            dialogueVariables.SetVariable("armCrafted", value);
+        }
+        if (isPaperArm)
+        {
+            Ink.Runtime.Object value = Ink.Runtime.Value.Create(true);
+            dialogueVariables.SetVariable("paperArm", value);
+            dialogueVariables.SetVariable("armCrafted", value);
         }
     }
 }

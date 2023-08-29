@@ -12,6 +12,7 @@ public class InventoryManager : MonoBehaviour
 
     private InventoryUI UI;
     int maxItems = 6;
+    private DialogueManager dialogueManager;
 
     void Awake()
     {
@@ -29,6 +30,7 @@ public class InventoryManager : MonoBehaviour
     void Start()
     {
         UI = GetComponent<InventoryUI>();
+        dialogueManager = DialogueManager.Instance;
         InitializeTestItems();
     }
 
@@ -170,5 +172,39 @@ public class InventoryManager : MonoBehaviour
     public void DecrementDookieCount(int countChange)
     {
         Decrement("Dookie", countChange);
+    }
+
+    public void DialogueChecks() // LOL 
+    {
+        bool hasPaperArm = SearchForItemByName("Paper Mache Arm") > -1;
+        bool hasPipeArm = SearchForItemByName("Pipe Arm") > -1;
+        if (hasPaperArm)
+        {
+            dialogueManager.SetPaperArm();
+        }
+        if (hasPipeArm)
+        {
+            dialogueManager.SetPipeArm();
+        }
+        if (!hasPaperArm && !hasPipeArm)
+        {
+            if (SearchForItemByName("scissors") > -1)
+            {
+                if (SearchForItemByName("duct tape") > -1)
+                {
+                    if (SearchForItemByName("old pipe") > -1)
+                    {
+                        dialogueManager.SetFoundParts();
+                    }
+                }
+                if (SearchForItemByName("glue") > -1)
+                {
+                    if (SearchForItemByName("newspaper") > -1)
+                    {
+                        dialogueManager.SetFoundParts();
+                    }
+                }
+            }
+        }
     }
 }

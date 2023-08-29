@@ -2,6 +2,6 @@ INCLUDE Globals.ink
 INCLUDE Intro.ink
 INCLUDE SearchParts.ink
 
-{ introPlayed == true: -> arm | -> intro }
+{ introPlayed == true: -> search_parts | -> intro }
 
 -> DONE
