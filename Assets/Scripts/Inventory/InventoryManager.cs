@@ -11,7 +11,7 @@ public class InventoryManager : MonoBehaviour
     public OnItemChanged OnItemChangedCallback;
 
     private InventoryUI UI;
-    int maxItems = 6;
+    int maxItems = 8;
     private DialogueManager dialogueManager;
 
     void Awake()
