@@ -9,9 +9,9 @@ public class InventoryManager : MonoBehaviour
 
     public delegate void OnItemChanged();
     public OnItemChanged OnItemChangedCallback;
+    public int maxItems = 8;
 
     private InventoryUI UI;
-    int maxItems = 8;
     private DialogueManager dialogueManager;
 
     void Awake()
