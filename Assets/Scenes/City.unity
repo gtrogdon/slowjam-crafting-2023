@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45054966, g: 0.498478, b: 0.56403464, a: 1}
+  m_IndirectSpecularColor: {r: 0.45054984, g: 0.4984783, b: 0.5640351, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1437,7 +1437,7 @@ Transform:
   m_GameObject: {fileID: 639476574}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.525595, y: -4.0999327, z: 21.810001}
+  m_LocalPosition: {x: -26.033934, y: -4.0999327, z: 21.810001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3461,6 +3461,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 683293685409575348, guid: e684aa2562e344f678a41bdc28d05922, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1472275478678696371, guid: e684aa2562e344f678a41bdc28d05922, type: 3}
       propertyPath: m_Name
       value: ShopManager
