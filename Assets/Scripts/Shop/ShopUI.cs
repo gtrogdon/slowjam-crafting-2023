@@ -23,7 +23,7 @@ public class ShopUI : MonoBehaviour
     private ShopSlot[] slots = new ShopSlot[10];
     private string defaultText = "Let me know what you\'re interested in. (Select an item)";
     private string lessDookiesText = "... you don't have enough dookies...";
-
+    private string noSpaceText = "... you don't have enough inventory space...";
 
     void Start()
     {
@@ -90,7 +90,14 @@ public class ShopUI : MonoBehaviour
     {
         if (!shopManager.Buy())
         {
-            DialogueText.text = lessDookiesText;
+            if (inventoryManager.Inventory.InventoryItems.Count >= inventoryManager.maxItems)
+            {
+                DialogueText.text = noSpaceText;
+            }
+            else
+            {
+                DialogueText.text = lessDookiesText;
+            }
             ItemInfo.SetActive(false);
             Dialogue.SetActive(true);
         }
