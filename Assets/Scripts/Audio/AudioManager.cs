@@ -79,4 +79,21 @@ public class AudioManager : MonoBehaviour
     {
         CleanUp();
     }
+
+    private void OnApplicationFocus(bool focus)
+    {
+        if (RuntimeManager.StudioSystem.isValid())
+        {
+            RuntimeManager.PauseAllEvents(!focus);
+
+            if (!focus)
+            {
+                RuntimeManager.CoreSystem.mixerSuspend();
+            }
+            else
+            {
+                RuntimeManager.CoreSystem.mixerResume();
+            }
+        }
+    }
 }
