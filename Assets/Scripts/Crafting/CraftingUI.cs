@@ -8,6 +8,7 @@ public class CraftingUI : MonoBehaviour
     public Transform SlotParent;
     public GameObject Crafting;
     public Image ResultIcon;
+    public Button CraftButton;
 
     private CraftingManager craftingManager;
     Slot[] slots;
@@ -23,6 +24,7 @@ public class CraftingUI : MonoBehaviour
         // Initial update for if this is being loaded after a scene transition,
         // otherwise inventory appears empty.
         UpdateIngredientsUI();
+        UpdateOutputUI();
     }
 
     void UpdateIngredientsUI()
@@ -49,11 +51,13 @@ public class CraftingUI : MonoBehaviour
         {
             ResultIcon.sprite = craftingManager.currentRecipe.OutputItem.Icon;
             ResultIcon.gameObject.SetActive(true);
+            CraftButton.interactable = true;
         }
         else
         {
             ResultIcon.sprite = null;
             ResultIcon.gameObject.SetActive(false);
+            CraftButton.interactable = false;
         }
     }
 

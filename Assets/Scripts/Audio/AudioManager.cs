@@ -41,6 +41,11 @@ public class AudioManager : MonoBehaviour
         RuntimeManager.PlayOneShot(sound, worldPos);
     }
 
+    public void PlayOneShot(EventReference sound)
+    {
+        RuntimeManager.PlayOneShot(sound);
+    }
+
     public EventInstance CreateEventInstance(EventReference eventReference)
     {
         EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
@@ -73,5 +78,22 @@ public class AudioManager : MonoBehaviour
     private void OnDestroy()
     {
         CleanUp();
+    }
+
+    private void OnApplicationFocus(bool focus)
+    {
+        if (RuntimeManager.StudioSystem.isValid())
+        {
+            RuntimeManager.PauseAllEvents(!focus);
+
+            if (!focus)
+            {
+                RuntimeManager.CoreSystem.mixerSuspend();
+            }
+            else
+            {
+                RuntimeManager.CoreSystem.mixerResume();
+            }
+        }
     }
 }
