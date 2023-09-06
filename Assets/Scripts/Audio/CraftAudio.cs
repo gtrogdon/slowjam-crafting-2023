@@ -5,17 +5,10 @@ using FMODUnity;
 
 public class CraftAudio : MonoBehaviour
 {
-    [SerializeField]
-    [EventRef]
-
-
-    private string soundEvent = null;
+    [SerializeField] private EventReference soundEvent;
 
     public void PlaySoundEvent()
     {
-        if (soundEvent != null)
-        {
-            RuntimeManager.PlayOneShot(soundEvent);
-        }
+        AudioManager.instance.PlayOneShot(soundEvent);
     }
 }
